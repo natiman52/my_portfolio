@@ -26,15 +26,7 @@ SECRET_KEY = 'django-insecure-wg4lksm!q=oe52(5-pv^1w(=vk*f7(7_hwx5z)&i#ns*r=vr5-
 DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
-SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-# Application definition
-LOGGING = {  
-    "version": 1,  
-    "disable_existing_loggers": False,  
-    "handlers": {"console": {"class": "logging.StreamHandler"}},  
-    "loggers": {"": {"handlers": ["console"], "level": "DEBUG"}},  
-}
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,8 +38,6 @@ INSTALLED_APPS = [
     "rest_framework",
 ]
 
-WHITENOISE_USE_FINDERS = True
-WHITENOISE_AUTOREFRESH = DEBUG
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
