@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/",include("Api.urls")),
     path('', TemplateView.as_view(template_name="index.html")),
+    re_path(r'^(?P<path>.*)/$', TemplateView.as_view(template_name="index.html")),
 ]
 
 if settings.DEBUG:
