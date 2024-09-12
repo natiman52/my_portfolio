@@ -1,1 +1,1 @@
-web: gunicorn framework.wsgi 
+web:python -m gunicorn framework.wsgi 
