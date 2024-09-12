@@ -4,6 +4,6 @@
         "builder": "NIXPACKS"
     },
     "deploy": {
-        "startCommand": "python -m pip install -r requirement.txt && python manage.py collectstatic --noinput && gunicorn framework.wsgi"
+        "startCommand": "pip3 install -r requirement.txt && python3 manage.py collectstatic --noinput && gunicorn framework.wsgi"
     }
 }
