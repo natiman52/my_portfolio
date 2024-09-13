@@ -1,1 +1,2 @@
 framework/settings.py
+db.sqlite
