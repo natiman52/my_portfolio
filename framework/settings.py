@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wg4lksm!q=oe52(5-pv^1w(=vk*f7(7_hwx5z)&i#ns*r=vr5-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://unwilling-viki-natilovetech-c49b5fca.koyeb.app/"]
+ALLOWED_HOSTS = ["https://unwilling-viki-natilovetech-c49b5fca.koyeb.app/",'unwilling-viki-natilovetech-c49b5fca.koyeb.app']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
